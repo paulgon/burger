@@ -14,7 +14,7 @@ var orm = {
         });
     },
     updateOne: function (tableInput, condition, cb) {
-        connection.query('UPDATE ' + tableInput + ' SET devoured=true WHERE id = ' + condition + ';', function (
+        connection.query('UPDATE ' + tableInput + ' SET devoured=1 WHERE id = ' + condition + ';', function (
             err,
             result
         ) {

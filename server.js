@@ -22,7 +22,7 @@ app.engine(
 app.set('view engine', 'handlebars');
 
 const routes = require('./controllers/routes.js');
-app.use('/', routes);
+app.use(routes);
 
 const port = 3000;
 app.listen(port);
